@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Ramesh",
+    "birthyear": 1999,
+    "department": "Mech",
+    "gender": "male",
+    "profile": "../assets/img1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Ragul",
+    "birthyear": 2000,
+    "department": "CS",
+    "gender": "male",
+    "profile": "../assets/img2.jfif"
+  },
+  {
+    "id": 3,
+    "name": "Ravi",
+    "birthyear": 1998,
+    "department": "EEE",
+    "gender": "male",
+    "profile": "../assets/img3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ramya",
+    "birthyear": 2001,
+    "department": "CS",
+    "gender": "female",
+    "profile": "../assets/img4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "kaviya",
+    "birthyear": 1998,
+    "department": "ECE",
+    "gender": "female",
+    "profile": "../assets/img5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Anitha",
+    "birthyear": 2001,
+    "department": "CS",
+    "gender": "female",
+    "profile": "../assets/img6.jpg"
+  }
+]

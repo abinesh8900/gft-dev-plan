@@ -1,0 +1,148 @@
+<div class="container">
+  <div>
+    <!-- <h1>Student Details</h1>
+  <div *ngIf="students.length == 0">
+    <h2 class="text-center">Cant get the student list</h2>
+  </div>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Birth Year</th>
+      <th>Gender</th>
+      <th>Department</th>
+    </tr>
+    <tr *ngFor="let student of students">
+      <td>{{ student.id }}</td>
+      <td>{{ student.name }}</td>
+      <td>{{ student.birthyear }}</td>
+      <td>{{ student.gender }}</td>
+      <td>{{ student.department }}</td>
+    </tr>
+  </table> -->
+
+    <!-- <div *ngFor="let student of students" class="profile_card">
+    <img class="imgsiz" src="{{ student.profile }}" />
+    <h4>{{ student.name }}</h4>
+    <p>birthyear : {{ student.birthyear }}</p>
+    <p>gender: {{ student.gender }}</p>
+    <p>department : {{ student.department }}</p>
+  </div>
+</div> -->
+
+    <!-- <div *ngFor="let student of students" style="display: inline-block">
+    <div *ngIf="student.gender == 'male'; then showMale; else showFemale"></div>
+    <ng-template #showMale>
+      <div class="profile_card">
+        <img class="imgsiz" src="{{ student.profile }}" />
+        <h4>{{ student.name }}</h4>
+        <p>birthyear : {{ student.birthyear }}</p>
+        <p>gender: {{ student.gender }}</p>
+        <p>department : {{ student.department }}</p>
+      </div>
+    </ng-template>
+    <ng-template #showFemale>
+      <div class="profile_card">
+        <img class="imgsiz" src="{{ student.profile }}" />
+        <h4>{{ student.name }}</h4>
+        <p>birthyear : {{ student.birthyear }}</p>
+        <p>gender: {{ student.gender }}</p>
+        <p>department : {{ student.department }}</p>
+      </div>
+    </ng-template>
+  </div> -->
+
+    <!-- <h1>Male Student List</h1>
+  <div *ngFor="let student of students" style="display: inline-block">
+    <div *ngIf="student.gender == 'male'">
+      <div class="profile_card">
+        <img class="imgsiz" src="{{ student.profile }}" />
+        <h4>{{ student.name }}</h4>
+        <p>birthyear : {{ student.birthyear }}</p>
+        <p>gender: {{ student.gender }}</p>
+        <p>department : {{ student.department }}</p>
+      </div>
+    </div>
+  </div>
+
+  <h1>Female Student List</h1>
+  <div *ngFor="let student of students" style="display: inline-block">
+    <div *ngIf="student.gender == 'female'">
+      <div class="profile_card">
+        <img class="imgsiz" src="{{ student.profile }}" />
+        <h4>{{ student.name }}</h4>
+        <p>birthyear : {{ student.birthyear }}</p>
+        <p>gender: {{ student.gender }}</p>
+        <p>department : {{ student.department }}</p>
+      </div>
+    </div>
+  </div> -->
+
+    <!-- <h3>{{ hero }}</h3> -->
+    <!-- <h2>{{ getDatas }}</h2> -->
+  </div>
+
+  <h1>Student in CS Department</h1>
+  <div *ngFor="let getData of getDatas" style="display: inline-block">
+    <div *ngIf="getData.department == 'CS'">
+      <div
+        (click)="alertConfirmation(getData.name)"
+        class="profile_card"
+        style="background-color: rgb(163, 202, 202); cursor: pointer"
+      >
+        <img class="imgsiz" src="{{ getData.profile }}" />
+        <h4>{{ getData.name }}</h4>
+        <p>birthyear : {{ getData.birthyear }}</p>
+        <p>gender: {{ getData.gender }}</p>
+        <p>department : {{ getData.department }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="mobiles">
+    <div *ngIf="mobiles.length != 0; else showpopup">
+      <div *ngFor="let mobile of mobiles" class="profile_card modi">
+        <h4>{{ mobile.mobileName }}</h4>
+        <p>RAM {{ mobile.ram }}GB</p>
+        <p>ROM {{ mobile.rom }}GB</p>
+        <button
+          type="button"
+          class="btn btn-success"
+          data-bs-toggle="modal"
+          data-bs-target="#successpopup"
+        >
+          {{ mobile.pricing }} {{ mobile.id }}
+        </button>
+      </div>
+    </div>
+    <ng-template #showpopup
+      ><div class="alert alert-danger no-data" role="alert">
+        NO DATA !
+      </div></ng-template
+    >
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="successpopup"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="alert-success">
+        <div class="modal-body">Success Message</div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-success text-center"
+            data-bs-dismiss="modal"
+            style="margin: 0 auto"
+          >
+            OK
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

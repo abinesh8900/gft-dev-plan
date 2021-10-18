@@ -1,0 +1,40 @@
+.imgsiz {
+  object-fit: cover;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.profile_card {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  /* display: inline-block; */
+  margin: 5px;
+}
+.profile_card.modi {
+  background-color: gray;
+  color: #ffff;
+  margin: 5px auto;
+}
+.no-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobiles {
+  width: 80vh;
+  margin: 0 auto;
+  background-color: rgba(97, 96, 96, 0.3);
+  border-radius: 5px;
+  padding: 30px;
+}
+/* .mobilepopup {
+  width: 300px;
+  text-align: center;
+}
+.modal-content {
+  width: 300px;
+  margin: 0 auto;
+} */
